@@ -4,8 +4,9 @@ export default ({pageContext: { post }}) => (
   <div>
   <h1>{post.title}</h1>
   <div><p>Author: </p>{post.author.name}</div>
-  <section>
-    {post.description.description}
-  </section>
+   <div
+      className="blog-post-content"
+      dangerouslySetInnerHTML={{ __html: post.body.childMarkdownRemark.html }}
+    />
   </div>
 )

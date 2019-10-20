@@ -4,24 +4,23 @@ exports.createPages = async ({ graphql, actions }: { graphql: any, actions: any 
     query {
       allContentfulBlogPost {
         nodes {
+          body {
+            childMarkdownRemark {
+              html
+            }
+          }
           heroImage {
             file {
               url
             }
           }
-          description {
-            description
-          }
-          body {
-            body
-          }
+          updatedAt
+          title
+          tags
+          slug
           author {
             name
           }
-          slug
-          title
-          tags
-          updatedAt
         }
       }
     }
