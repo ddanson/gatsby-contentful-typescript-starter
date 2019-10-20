@@ -4,6 +4,9 @@
   "version": "0.3.0",
   "author": "Drew Danson",
   "dependencies": {
+    "@emotion/core": "^10.0.21",
+    "@emotion/styled": "^10.0.17",
+    "@types/react": "^16.9.9",
     "@types/react-helmet": "^5.0.11",
     "dotenv": "^6.2.0",
     "emotion": "^9.2.12",
