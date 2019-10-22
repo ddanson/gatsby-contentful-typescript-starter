@@ -11,7 +11,7 @@ const contentfulConfig = {
 
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Contentful TypeScript starter',
+    title: 'Nice Shrubs',
   },
   plugins: [
     'gatsby-plugin-react-helmet',

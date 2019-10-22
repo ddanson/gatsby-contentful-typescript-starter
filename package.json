@@ -1,6 +1,6 @@
 {
-  "name": "gatsby-starter-contentful-typescript",
-  "description": "Gatsby Contentful TypeScript starter",
+  "name": "nice-shrubs",
+  "description": "Home Gardening Website",
   "version": "0.3.0",
   "author": "Drew Danson",
   "dependencies": {
@@ -27,9 +27,6 @@
     "tslint": "^5.20.0",
     "typescript": "^3.6.4"
   },
-  "keywords": [
-    "gatsby"
-  ],
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
@@ -45,6 +42,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/ddanson/nice-shrubs"
   }
 }
