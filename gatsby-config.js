@@ -18,8 +18,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'gatsby-starter-contentful-typescript',
-        short_name: 'starter',
+        name: 'nice shrubs',
+        short_name: 'nice shrubs',
         start_url: '/',
         background_color: '#663399',
         theme_color: '#663399',
