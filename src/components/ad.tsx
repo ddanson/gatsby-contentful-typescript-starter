@@ -6,6 +6,11 @@ interface AdProps {
   height: string
 }
 
+const AdContainer = styled.div({
+  backgroundColor: 'lightgrey',
+  margin: 'auto',
+})
+
 const AdText = styled.span({
   display: 'block',
   fontSize: '14px',
@@ -19,7 +24,7 @@ function Ad(adProps: AdProps) {
   return (
     <div>
       <AdText style={{width: adProps.width}}>Advertisement</AdText>
-        <div style={{width: adProps.width, height: adProps.height, margin: 'auto'}} />
+      <AdContainer style={{width: adProps.width, height: adProps.height}} />
     </div>
   )
 }
