@@ -58,7 +58,7 @@ const Layout = ({ children }: Props) => (
             }
           `}
         />
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <Header />
         {children}
       </>
     )}
