@@ -32,6 +32,7 @@ const Layout = ({ children }: Props) => (
           ]}
         >
           <html lang="en" />
+          <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Work+Sans:600,700&display=swap" rel="stylesheet" />
         </Helmet>
         <Global
           styles={css`
