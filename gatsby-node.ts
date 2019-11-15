@@ -10,8 +10,12 @@ exports.createPages = async ({ graphql, actions }: { graphql: any, actions: any 
             }
           }
           heroImage {
-            file {
-              url
+            fluid(maxWidth: 1440) {
+              base64
+              aspectRatio
+              src
+              srcSet
+              sizes
             }
           }
           updatedAt

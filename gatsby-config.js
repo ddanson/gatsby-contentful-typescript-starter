@@ -31,6 +31,7 @@ module.exports = {
     `gatsby-plugin-typescript`,
     'gatsby-transformer-remark',
     'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
     {
       resolve: `gatsby-source-contentful`,
       options: contentfulConfig,
