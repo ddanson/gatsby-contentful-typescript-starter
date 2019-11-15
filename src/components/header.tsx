@@ -5,7 +5,11 @@ import { Link } from 'gatsby'
 import Grid from './grid'
 
 const Header = styled.div({
-  marginTop: '20px',
+  paddingTop: '20px',
+  position: 'fixed',
+  top: '0', 
+  width: '100%',
+  'z-index': '1',
 })
 
 const Menu = styled.a({
