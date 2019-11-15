@@ -29,9 +29,23 @@ module.exports = {
     },
     'gatsby-plugin-offline',
     `gatsby-plugin-typescript`,
-    'gatsby-transformer-remark',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
+    {
+     resolve: `gatsby-transformer-remark`,
+     options: {
+       plugins: [
+         {
+           resolve: `gatsby-remark-images-contentful`,
+           options: {
+             maxWidth: 1440,
+             withWebP: true,
+             loading: 'lazy',
+           },
+         },
+       ],
+     },
+    },
     {
       resolve: `gatsby-source-contentful`,
       options: contentfulConfig,
