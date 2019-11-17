@@ -18,7 +18,7 @@ exports.createPages = async ({ graphql, actions }: { graphql: any, actions: any 
               sizes
             }
           }
-          updatedAt
+          createdAt(formatString: "MMMM DD, YYYY")
           title
           tags
           slug
