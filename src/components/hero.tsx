@@ -6,6 +6,11 @@ type Props = {
   fluid: any
 }
 
+const Hero = styled.div({
+  position: 'relative',
+  'z-index': -1,
+})
+
 const Overlay = styled.div({
   background: 'linear-gradient(180deg, rgba(29,29,29,0.2) 0%, rgba(86,86,86,0.15) 63%, rgba(246,246,246,0) 100%)',
   position: 'absolute',
@@ -18,9 +23,9 @@ const Overlay = styled.div({
 
 export default ({ fluid }: Props) => {
   return (
-    <div style={{position: 'relative'}}>
+    <Hero>
       <Overlay />
       <Img fluid={fluid} />
-    </div>
+    </Hero>
   )
 }
