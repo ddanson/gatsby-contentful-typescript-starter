@@ -41,6 +41,7 @@ module.exports = {
              maxWidth: 1440,
              withWebP: true,
              loading: 'lazy',
+             linkImagesToOriginal: false,
            },
          },
        ],
