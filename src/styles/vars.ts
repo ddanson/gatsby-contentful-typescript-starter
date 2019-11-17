@@ -14,3 +14,6 @@ export const colors = {
   black: '#1A1B1B',
   white: '#FFFFFF',
 }
+
+// All spacing is in multiples of 8
+export const baseSpacing = 8
