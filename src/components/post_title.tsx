@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from '@emotion/styled'
 
-const PostTitle = styled.h1({
-  gridColumn:  '1 / -1',
-})
+const PostTitle = styled.h1`
+  grid-column:  1 / -1;
+`
 
 type Props = {
   children: React.ReactNode

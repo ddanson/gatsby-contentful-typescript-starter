@@ -9,12 +9,13 @@ type Props = {
   children: React.ReactNode
 }
 
-const Content = styled.div({
-  marginTop: '-16px',
-  'border-radius': '20px 20px 0 0',
-  'background-color': colors.white,
-  'box-shadow': '0 16px 48px 0 rgba(0,0,0,0.15)',
-})
+const Content = styled.div`
+  margin-top: -16px;
+  border-radius: 20px 20px 0 0;
+  background-color: ${colors.white};
+  box-shadow: 0 16px 48px 0 rgba(0,0,0,0.15);
+  z-index: 2;
+`
 
 export default ({ children }: Props) => {
   return (

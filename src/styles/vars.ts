@@ -7,6 +7,7 @@ export const fonts = {
 export const colors = {
   primary: '#00A181',
   darkGreen: '#007A5D',
+  lightGreen: '#00A181',
   secondary: '#4B31A1',
   lightGrey: '#ECEDEE',
   mediumGrey: '#909699',

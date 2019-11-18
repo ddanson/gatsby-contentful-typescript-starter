@@ -1,15 +1,38 @@
 import React from 'react'
 import styled from '@emotion/styled'
+import { css } from '@emotion/core'
 
-const PostMeta = styled.div({
-  gridColumn:  '1 / -1',
-})
+import { colors, fonts } from '../styles/vars'
 
-const AuthorName = styled.div({
-})
+const AuthorImage = styled.img`
+  border-radius: 50%;
+  margin-right: 16px;
+  width: 32px;
+  height: 32px;
+`
 
-const PublishDate = styled.div({
-})
+const PostMeta = styled.div`
+  grid-column:  1 / -1;
+  display: flex;
+`
+
+const AuthorName = styled.div`
+  color: ${colors.lightGreen};
+  font-size: ${14 / fonts.base}rem;
+  padding-right: 8px;
+
+  :after {
+    content: '';
+    width: 8px;
+    height: 14px;
+    border-right: 2px solid ${colors.mediumGrey};
+    display: inline-block;
+    margin-bottom: -3px;
+  }
+`
+
+const PublishDate = styled.div`
+`
 
 type Props = {
   authorName: string,
@@ -19,7 +42,8 @@ type Props = {
 export default ( { authorName, publishDate }: Props) => {
   return (
     <PostMeta>
-      <AuthorName>{authorName}</AuthorName>
+      <AuthorImage src='https://i.pravatar.cc/32x32' />
+      <AuthorName styles={css``}>{authorName}</AuthorName>
       <PublishDate>{publishDate}</PublishDate>
     </PostMeta>
   )

@@ -4,27 +4,27 @@ import { Link } from 'gatsby'
 
 import Grid from './grid'
 
-const Header = styled.div({
-  paddingTop: '20px',
-  position: 'fixed',
-  top: '0', 
-  width: '100%',
-  'z-index': '2',
-})
+const Header = styled.div`
+  padding-top: 20px;
+  position: fixed;
+  top: 0,;
+  width: 100%;
+  z-index: 2;
+`
 
-const Menu = styled.a({
-  gridColumn:  '1 / span 1',
-})
+const Menu = styled.a`
+  grid-column:  1 / span 1;
+`
 
-const Logo = styled.div({
-  gridColumn:  '2 / span 2',
-  justifySelf: 'center',
-})
+const Logo = styled.div`
+  grid-column: 2 / span 2;
+  justify-self: center;
+`
 
-const Search = styled.a({
-  gridColumn:  '4 / span 1',
-  justifySelf: 'end',
-})
+const Search = styled.a`
+  grid-column: 4 / span 1;
+  justify-self: end;
+`
 
 export default () => (
   <Header>
