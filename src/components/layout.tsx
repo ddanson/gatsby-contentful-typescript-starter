@@ -5,7 +5,7 @@ import { Global, css } from '@emotion/core'
 
 import Header from './header'
 
-import { colors, fonts } from '../styles/vars'
+import { baseSpacing, colors, fonts } from '../styles/vars'
 
 type Props = {
   children: React.ReactNode
@@ -48,6 +48,7 @@ const Layout = ({ children }: Props) => (
               font-size: ${36 / fonts.base}rem;
               letter-spacing: 0.5px;
               line-height: ${42 / fonts.base}rem;
+              margin: 0 0 ${baseSpacing * 2}px 0;
             }
             h2 {
               font-family: ${fonts.headingFamily};

@@ -12,7 +12,7 @@ const AuthorImage = styled.img`
 `
 
 const PostMeta = styled.div`
-  grid-column:  1 / -1;
+  grid-column: 1 / -1;
   display: flex;
 `
 
@@ -20,18 +20,22 @@ const AuthorName = styled.div`
   color: ${colors.lightGreen};
   font-size: ${14 / fonts.base}rem;
   padding-right: 8px;
+  font-style: italic;
 
   :after {
     content: '';
     width: 8px;
     height: 14px;
-    border-right: 2px solid ${colors.mediumGrey};
+    border-right: 1px solid ${colors.mediumGrey};
     display: inline-block;
     margin-bottom: -3px;
   }
 `
 
 const PublishDate = styled.div`
+  color: ${colors.mediumGrey};
+  font-size: ${14 / fonts.base}rem;
+  font-style: italic;
 `
 
 type Props = {
