@@ -9,7 +9,7 @@ type Props = {
   children: React.ReactNode
 }
 
-const Content = styled.div`
+const PostContent = styled.div`
   margin-top: -16px;
   padding-top: ${baseSpacing * 6}px; 
   border-radius: 20px 20px 0 0;
@@ -20,10 +20,10 @@ const Content = styled.div`
 
 export default ({ children }: Props) => {
   return (
-    <Content>
+    <PostContent>
       <Grid>
         { children }
       </Grid>
-    </Content>
+    </PostContent>
   )
 }
