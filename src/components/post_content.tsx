@@ -16,6 +16,10 @@ const PostContent = styled.div`
   background-color: ${colors.white};
   box-shadow: 0 16px 48px 0 rgba(0,0,0,0.15);
   z-index: 2;
+
+  .gatsby-resp-image-wrapper, .gatsby-resp-image-background-image, img {
+    border-radius: 8px;
+  }
 `
 
 export default ({ children }: Props) => {

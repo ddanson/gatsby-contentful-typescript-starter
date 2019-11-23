@@ -14,6 +14,10 @@ export const colors = {
   darkGrey: '#696F72',
   black: '#1A1B1B',
   white: '#FFFFFF',
+  darkBlack: '#000000',
+  shrubLightGreen: '#9CE492',
+  treeLightGreen: '#66D79B',
+  treeDarkGreen: '#00C9A7',
 }
 
 // All spacing is in multiples of 8
