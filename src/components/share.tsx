@@ -7,7 +7,7 @@ type Props = {
   shareSlug: string
 }
 
-const ShareHeading = styled.p`
+const ShareHeading = styled.div`
   grid-column: 1 / -1;
   text-transform: uppercase;
 `
@@ -19,8 +19,8 @@ const Share = styled.div`
 
 export default ({ description, heroImg, shareSlug }: Props ) => (
   <>
-    <ShareHeading>
-      <div className="overline">Share Article</div>
+    <ShareHeading className="overline">
+      Share Article
     </ShareHeading>
     <Share>
       <a href={`https://www.facebook.com/sharer/sharer.php?u=https://niceshrubs.com/${shareSlug}`} target="_blank">

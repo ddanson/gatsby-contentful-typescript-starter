@@ -24,7 +24,7 @@ const PostContent = styled.div`
 
 export default ({ children }: Props) => {
   return (
-    <PostContent>
+    <PostContent className="PostContent">
       <Grid>
         { children }
       </Grid>

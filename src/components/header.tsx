@@ -9,7 +9,7 @@ import { colors } from '../styles/vars'
 const Header = styled.div`
   padding-top: 20px;
   position: fixed;
-  top: 0,;
+  top: 0;
   width: 100%;
   z-index: 2;
   background: ${props => props.visibility === 'high' ? colors.white : 'none'};
