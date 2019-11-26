@@ -57,6 +57,14 @@ const Layout = ({ children }: Props) => (
               letter-spacing: 0.25px;
               line-height: ${32 / fonts.base}rem;
             }
+            .overline {
+              font-size: ${12 / fonts.base}rem;
+              font-weight: bold;
+              letter-spacing: 1.5px;
+              line-height: ${24 / fonts.base}rem;
+              font-family: ${fonts.primaryFamily};
+              color: ${colors.overlineBlack};
+            }
           `}
         />
         <Header />

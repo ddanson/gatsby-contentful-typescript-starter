@@ -17,6 +17,9 @@ exports.createPages = async ({ graphql, actions }: { graphql: any, actions: any 
               srcSet
               sizes
             }
+            file {
+              url
+            }
           }
           createdAt(formatString: "MMMM DD, YYYY")
           title
@@ -24,6 +27,9 @@ exports.createPages = async ({ graphql, actions }: { graphql: any, actions: any 
           slug
           author {
             name
+          }
+          description {
+            description
           }
         }
       }

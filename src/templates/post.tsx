@@ -6,6 +6,7 @@ import PostContent from '../components/post_content'
 import PostContentBody from '../components/post_content_body'
 import PostTitle from '../components/post_title'
 import PostMeta from '../components/post_meta'
+import Share from '../components/share'
 
 export default ({ pageContext: { post } }) => {
   return (
@@ -17,6 +18,7 @@ export default ({ pageContext: { post } }) => {
           <PostContentBody
             dangerouslySetInnerHTML={{ __html: post.body.childMarkdownRemark.html }}
           />
+          <Share description={post.description.description} heroImg={post.heroImage.file.url} shareSlug={post.slug} />
        </PostContent>
     </Layout>
   )

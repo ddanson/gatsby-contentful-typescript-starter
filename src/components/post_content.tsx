@@ -17,7 +17,7 @@ const PostContent = styled.div`
   box-shadow: 0 16px 48px 0 rgba(0,0,0,0.15);
   z-index: 2;
 
-  .gatsby-resp-image-wrapper, .gatsby-resp-image-background-image, img {
+  .gatsby-resp-image-wrapper, .gatsby-resp-image-background-image, .gatsby-resp-image-image {
     border-radius: 8px;
   }
 `

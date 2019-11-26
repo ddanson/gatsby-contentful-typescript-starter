@@ -18,6 +18,7 @@ export const colors = {
   shrubLightGreen: '#9CE492',
   treeLightGreen: '#66D79B',
   treeDarkGreen: '#00C9A7',
+  overlineBlack: '#30312F',
 }
 
 // All spacing is in multiples of 8
