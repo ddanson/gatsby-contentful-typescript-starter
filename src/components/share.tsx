@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from '@emotion/styled'
 
+import { baseSpacing } from '../styles/vars'
+
 type Props = {
   description: string
   heroImg: string
@@ -10,7 +12,7 @@ type Props = {
 const ShareHeading = styled.div`
   grid-column: 1 / -1;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: ${baseSpacing * 2}px;
 `
 const Share = styled.div`
   grid-column: 1 / -1;
