@@ -9,16 +9,16 @@ import PostMeta from '../components/post_meta'
 import PostDescription from '../components/post_description'
 import Share from '../components/share'
 
-export default ({ pageContext: { post } }) => {
+export default ({ pageContext: { post, content, page } }) => {
   return (
     <Layout>
       <Hero fluid={post.heroImage.fluid} />
       <PostContent>
         <PostTitle>{post.title}</PostTitle>
           <PostMeta authorName={post.author.name} publishDate={post.createdAt} />
-          <PostDescription description={post.description.description} />
+          { page === 0 && <PostDescription description={post.description.description} /> }
           <PostContentBody
-            dangerouslySetInnerHTML={{ __html: post.body.childMarkdownRemark.html }}
+            dangerouslySetInnerHTML={{ __html: content }}
           />
           <Share description={post.description.description} heroImg={post.heroImage.file.url} shareSlug={post.slug} />
        </PostContent>
