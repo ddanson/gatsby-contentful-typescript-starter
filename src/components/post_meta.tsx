@@ -47,7 +47,7 @@ export default ( { authorName, publishDate }: Props) => {
   return (
     <PostMeta>
       <AuthorImage src='https://i.pravatar.cc/32x32' />
-      <AuthorName styles={css``}>{authorName}</AuthorName>
+      <AuthorName>{authorName}</AuthorName>
       <PublishDate>{publishDate}</PublishDate>
     </PostMeta>
   )

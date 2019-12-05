@@ -15,7 +15,7 @@ const ShareHeading = styled.div`
 const Share = styled.div`
   grid-column: 1 / -1;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 `
 
 export default ({ description, heroImg, shareSlug }: Props ) => (
@@ -29,7 +29,7 @@ export default ({ description, heroImg, shareSlug }: Props ) => (
             <defs>
               <polygon id="path-1" points="0.00281250011 0.00187499996 48.0000011 0.00187499996 48.0000011 47.708437 0.00281250011 47.708437"/>
             </defs>
-            <g id="Asset-Artboard-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="Asset-Artboard-Page" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
                 <g id="icons/facebook/colour" transform="translate(0.135905, 0.000000)">
                     <g id="f_logo_RGB-Blue_1024">
                         <g id="Group-3">
@@ -47,8 +47,8 @@ export default ({ description, heroImg, shareSlug }: Props ) => (
       </a>
       <a href={`http://pinterest.com/pin/create/button/?url=https://niceshrubs.com/${shareSlug}&media=${heroImg}&description=${description}`} target="_blank">
         <svg xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" width="49px" height="48px" viewBox="0 0 49 48" version="1.1">
-            <g id="Asset-Artboard-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                <g id="icons/pinterest/colour" transform="translate(0.135905, 0.000000)" fill-rule="nonzero">
+            <g id="Asset-Artboard-Page" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
+                <g id="icons/pinterest/colour" transform="translate(0.135905, 0.000000)" fillRule="nonzero">
                     <g id="badgeRGB">
                         <circle id="Oval" fill="#FFFFFF" cx="23.9016399" cy="23.9016399" r="23.9016399"/>
                         <path d="M23.901639,0 C10.7016392,0 0,10.7016397 0,23.9016402 C0,34.0327881 6.29508188,42.6885261 15.186885,46.1704935 C14.9704916,44.2819688 14.7934424,41.3704933 15.2655736,39.3049194 C15.6983604,37.4360669 18.0590161,27.4229518 18.0590161,27.4229518 C18.0590161,27.4229518 17.3508194,25.9868862 17.3508194,23.8819681 C17.3508194,20.5573778 19.2786883,18.0786892 21.6786882,18.0786892 C23.7245898,18.0786892 24.7081964,19.6131155 24.7081964,21.4426237 C24.7081964,23.4885254 23.4098357,26.557378 22.7213112,29.4098371 C22.1508194,31.7901651 23.9213111,33.7377061 26.2622947,33.7377061 C30.511475,33.7377061 33.7770487,29.2524601 33.7770487,22.8000008 C33.7770487,17.0754104 29.6655734,13.0819677 23.7836062,13.0819677 C16.9770489,13.0819677 12.9836064,18.1770498 12.9836064,23.4491812 C12.9836064,25.4950829 13.7704916,27.6983616 14.7540982,28.8983617 C14.9508195,29.1344273 14.9704916,29.3508207 14.9114752,29.5868863 C14.734426,30.3344273 14.3213113,31.9672143 14.2426228,32.3016405 C14.1442621,32.7344274 13.8885244,32.8327881 13.4360654,32.6163946 C10.4459015,31.2196732 8.57704906,26.8721321 8.57704906,23.3508205 C8.57704906,15.816394 14.0459014,8.8918036 24.3737702,8.8918036 C32.6557373,8.8918036 39.1081962,14.7934432 39.1081962,22.7016402 C39.1081962,30.9442634 33.9147536,37.5737718 26.7147537,37.5737718 C24.2950816,37.5737718 22.0131144,36.3147554 21.2459013,34.8196734 C21.2459013,34.8196734 20.0459014,39.383608 19.7508194,40.5049195 C19.2196719,42.5901655 17.7639342,45.1868869 16.7803276,46.7803295 C19.0229506,47.4688542 21.3836063,47.8426247 23.8622947,47.8426247 C37.0622946,47.8426247 47.7640419,37.1409849 47.7640419,23.9409845 C47.803278,10.7016397 37.1016388,0 23.901639,0 Z" id="Path" fill="#E60019"/>
@@ -59,8 +59,8 @@ export default ({ description, heroImg, shareSlug }: Props ) => (
       </a>
         <a href={`http://twitter.com/share?url=https://niceshrubs.com/${shareSlug};text=${description};size=l&amp;count=none`} target="_blank">
         <svg xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" width="49px" height="48px" viewBox="0 0 49 48" version="1.1">
-            <g id="Asset-Artboard-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                <g id="icons/twitter/colour" transform="translate(0.135905, 0.000000)" fill-rule="nonzero">
+            <g id="Asset-Artboard-Page" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
+                <g id="icons/twitter/colour" transform="translate(0.135905, 0.000000)" fillRule="nonzero">
                     <g id="Twitter_Social_Icon_Circle_Color">
                         <g id="Dark_Blue" fill="#1DA1F2">
                             <circle id="Oval" cx="24" cy="24" r="24"/>

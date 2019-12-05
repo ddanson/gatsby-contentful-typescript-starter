@@ -6,6 +6,7 @@ import PostContent from '../components/post_content'
 import PostContentBody from '../components/post_content_body'
 import PostTitle from '../components/post_title'
 import PostMeta from '../components/post_meta'
+import PostDescription from '../components/post_description'
 import Share from '../components/share'
 
 export default ({ pageContext: { post } }) => {
@@ -15,6 +16,7 @@ export default ({ pageContext: { post } }) => {
       <PostContent>
         <PostTitle>{post.title}</PostTitle>
           <PostMeta authorName={post.author.name} publishDate={post.createdAt} />
+          <PostDescription description={post.description.description} />
           <PostContentBody
             dangerouslySetInnerHTML={{ __html: post.body.childMarkdownRemark.html }}
           />
